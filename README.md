@@ -9,6 +9,6 @@ Students are expected to:
 Student Info
 =========================
 
-* Student Name: Nguyen Duc Bao Minh
+* Student Name: NGUYEN DUC BAO MINH
 * Student ID: BI12-278
 
