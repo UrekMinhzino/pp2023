@@ -20,12 +20,12 @@ def input_courses():
     return courses
 
 def input_marks(students, courses):
-    list_courses(courses)
-    course_index = int(input("Select a course: ")) - 1
-    course_id = courses[course_index]["id"]
-    for student in students:
-        mark = input(f"Enter {student['name']}'s mark for {course_id}: ")
-        student["marks"][course_id] = mark
+    for course in courses:
+        list_students(students)
+        student_index = int(input("Select student: ")) - 1
+        student_id = students[student_index]["id"]
+        mark = input(f"Enter {student_id}'s mark for {course['id']}: ")
+        students[student_index]["marks"][course['id']] = mark
 
 def list_courses(courses):
     print("Courses:")
